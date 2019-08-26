@@ -27,9 +27,10 @@
 	3. `git add README`: add readme to files to be tracked or committed
 	4. modify README, use `git status`: shows the modified README
 	5. use `git add README` *again*: add README to tracked files
+		- `git rm --cached README`: not track README, file is now in the folder, not deleted
 	6. `git commit -m "modify README"`: README now is unmodified
-	7. `git rm --cached README`: not track README
-	
+		- `git rm README`: README is now deleted and not tracked. no README file in the folder.
+
 - dig deeper
 	1. `git status -s`: brief status of current repository.
 		- M(red): modified not stateged
@@ -38,4 +39,7 @@
 		- A: new added to tracked files
 	2. .gitignore file
 		- the file can make files not tracked by git
-		- 
+		- *.[ao]: files end with a or o
+		- *~: files end with ~
+		- /debug: debug folder (recrusive)
+		- /release/bin/: only the bin folder
