@@ -9,9 +9,9 @@ git config --global user.name "Barney"
 	3. every git project folder's config, which is .git/config: only works for the project
 
 - what to do after git is installed
-	1. git config --global user.name "John Doe"
-	2. git config --global user.email johndoe@example.com
-	3. git config --global core.editor emacs
+	1. `git config --global user.name "John Doe"`
+	2. `git config --global user.email johndoe@example.com`
+	3. `git config --global core.editor emacs`
 
 - you can use `git config --list`to show all the git configs
 - you can use `git config user.name` to check the git config of user name
