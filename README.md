@@ -5,4 +5,4 @@ My notes on git commands
 - all things can be found in [git-scm](https://git-scm.com/book/zh/v2)
 
 ## chapters
-1. [config](config.md)
+1. [config](chapter_1_config.md)
