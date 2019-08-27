@@ -86,7 +86,14 @@
 - cancel the unstaged changed
 	- `git checkout file`: the staged files would not be changed, the unstaged would be changed.
 
-
+## retmote
+	- commands are easy, normally only three would be used often
+	```
+	git clone xxx
+	git fetch
+	git pull
+	```
+	- skill
 
 
 
