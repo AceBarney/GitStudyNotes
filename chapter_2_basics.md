@@ -7,6 +7,7 @@
 
 ## talk something about status
 
+### basic commands
 - there are several status of a file
 	1. untracked
 	2. unmodified
@@ -21,7 +22,7 @@
 	git rm --cached README
 	git rm README
 	```
-- use an example to show the commands
+- use an example to show the simple commands
 	1. create a file README in the current repository
 	2. `git stasus`: shows README is untracked
 	3. `git add README`: add readme to files to be tracked or committed
@@ -31,15 +32,16 @@
 	6. `git commit -m "modify README"`: README now is unmodified
 		- `git rm README`: README is now deleted and not tracked. no README file in the folder.
 
+
 - dig deeper
-	1. `git status -s`: brief status of current repository.
+	1.  `git status -s`: brief status of current repository.
 		- M(red): modified not stateged
 		- M(green): modifed stated
 		- ??: untracked
 		- A: new added to tracked files
 	2. .gitignore file
 		- the file can make files not tracked by git
-	```
+		```
 		- *.[ao]  #files end with a or o
 		- *~ #files end with '~'
 		- /debug #debug folder (recrusive)
@@ -47,5 +49,49 @@
 		- !my.o #track my.o file
 		- doc/*.txt #ignore doc/notes.txt, but not doc/server/arch.txt
 		- doc/**/*.pdf #ignore all .pdf files in the doc/ directory
-	```
-	3. 
+		```
+	3. show changes in detail
+		- `git diff`: show the unstaged changes
+		- `git diff --staged`: show the staged changes
+	4. `git commit -a`: equals to git add and git commit. the unstaged files would not be in the commit list
+	5. `git mv README.md README`: equals to the following
+		```
+		mv README.md README
+		git rm README.md
+		git add README
+		```
+
+- logs
+	- logs are important when you want to check whether the logs 
+	- `git log`: basic useage, shows commit logs
+	- `git log -p -2`: shows difference of the most recent two commites
+	- `git log --pretty=oneline`
+	- `git log --pretty=oneline --graph`
+	- `git log --since=2.weeks` : commits of recent two weeks, `--since, --after`, `--until, --before`
+	- `git log -Sfunction_name` : list commits about the funciton, *-S is useful*
+	- `git log --author=barney`
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
