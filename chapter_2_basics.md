@@ -80,6 +80,10 @@
 	$ git commit --amend
 	```
 
+- unstage the changes
+	- `git reset HEAD xxx.md`:this would unstage the chages, but the file is not changed
+
+
 
 
 
