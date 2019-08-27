@@ -83,8 +83,8 @@
 - unstage the changes
 	- `git reset HEAD xxx.md`:this would unstage the chages, but the file is not changed
 
-
-
+- cancel the unstaged changed
+	- `git checkout file`: the staged files would not be changed, the unstaged would be changed.
 
 
 
