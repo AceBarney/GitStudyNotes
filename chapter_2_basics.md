@@ -87,28 +87,29 @@
 	- `git checkout file`: the staged files would not be changed, the unstaged would be changed.
 
 ## retmote
-	- commands are easy, normally only three would be used often
+	- commands are easy, normally only four would be used often
 	```
 	git clone xxx
 	git fetch
 	git pull
+	git push
 	```
 	- skill
 
+## git tag
+	- `git tag -a v1.4 -m "my version 1.4"` : this is a detailed tag
+	- `git tag v1.5-lw` : this defines a light weight tag
+	- `git show v1.4` : show detail info of tag v1.4
+	- `git tag -d v1.4` : delete tag
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
+## alias
+	- alias is important. it can help you git easily
+	`
+		git config --global alias.co checkout
+		git config --global alias.br branch
+		git config --global alias.ci commit
+		git config --global alias.st status
+		git config --global alias.unstage 'reset HEAD --'
+	`
