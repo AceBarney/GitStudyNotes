@@ -72,7 +72,13 @@
 	- `git log --author=barney`
 
 	
-
+- amend
+	- this would add the 
+	```
+	$ git commit -m 'initial commit'
+	$ git add forgotten_file
+	$ git commit --amend
+	```
 
 
 
