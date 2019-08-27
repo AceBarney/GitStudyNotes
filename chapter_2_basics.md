@@ -39,7 +39,13 @@
 		- A: new added to tracked files
 	2. .gitignore file
 		- the file can make files not tracked by git
-		- *.[ao]: files end with a or o
-		- *~: files end with ~
-		- /debug: debug folder (recrusive)
-		- /release/bin/: only the bin folder
+	```
+		- *.[ao]  #files end with a or o
+		- *~ #files end with '~'
+		- /debug #debug folder (recrusive)
+		- /release/bin/ #only the bin folder
+		- !my.o #track my.o file
+		- doc/*.txt #ignore doc/notes.txt, but not doc/server/arch.txt
+		- doc/**/*.pdf #ignore all .pdf files in the doc/ directory
+	```
+	3. 
