@@ -6,3 +6,4 @@ My notes on git commands
 
 ## chapters
 1. [config](chapter_1_config.md)
+2. [basic local](chapter_2_basics.md)
